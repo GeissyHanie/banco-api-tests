@@ -8,8 +8,8 @@ describe('Login', function () {
                 .post('/login')
                 .set('Content-Type', 'application/json')
                 .send({
-                        'username': 'julio.lima',
-                        'senha': '123456'
+                        username: 'julio.lima',
+                        senha: '123456'
                     })
 
             expect(resposta.status).to.equal(200);
